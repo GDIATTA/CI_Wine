@@ -18,7 +18,7 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install -r requirements(1).txt
+          pip install -r requirements.txt
           pip install --upgrade pip
           python train.py
           npm install -g @dvcorg/cml
